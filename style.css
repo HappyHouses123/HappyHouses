@@ -60,6 +60,28 @@ nav a:hover {
     margin: 0 auto 20px;
 }
 
+/* Responsive Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Button */
 .btn {
     display: inline-block;
     background: #000;
@@ -114,20 +136,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: black;
-    color: white;
-}
-
-/* News Section Styling */
-#news {
-    background: #ffffff;
-    padding: 60px 20px;
-}
-
+/* News Section */
 .news-card {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +173,15 @@ footer {
     color: #222;
 }
 
-/* Responsive Design */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+
+/* Responsive Styles */
 @media (max-width: 1024px) {
     header {
         padding: 15px 30px;
@@ -227,25 +244,3 @@ footer {
         font-size: 16px;
     }
 }
-/* Responsive Video */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    padding-top: 25px;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    margin: 20px auto;
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-
