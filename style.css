@@ -15,6 +15,7 @@ header {
     padding: 15px 50px;
     background: #D4A14E; /* Roof color */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -25,6 +26,8 @@ header {
 nav {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
@@ -42,7 +45,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background: #3ED14B; /* Ground color */
 }
 
@@ -118,8 +121,8 @@ footer {
     background: black;
     color: white;
 }
+
 /* News Section Styling */
-/* Improved News Section Styling */
 #news {
     background: #ffffff;
     padding: 60px 20px;
@@ -160,3 +163,68 @@ footer {
     margin-bottom: 15px;
     color: #222;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .news-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-card img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .news-details {
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .game-card {
+        width: 90%;
+    }
+
+    .news-details h3 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
