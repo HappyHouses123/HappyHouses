@@ -244,3 +244,15 @@ footer {
         font-size: 16px;
     }
 }
+.itch-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.itch-embed iframe {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}
